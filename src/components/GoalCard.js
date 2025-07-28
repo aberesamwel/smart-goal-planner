@@ -9,8 +9,7 @@ const GoalCard = ({ goal, deleteGoal }) => {
   const warning = daysLeft <= 30 && !overdue && savedAmount < targetAmount;
 
   return (
-    <div className="relative bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow-lg mb-6 transform hover:scale-[1.02] transition-all duration-300 border border-gray-100">
-      {/* Header with goal name and category */}
+    <div className="relative bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl p-6 rounded-2xl mb-6 hover:shadow-pink-500/20 transition-shadow duration-300">
       <div className="flex justify-between items-start">
         <div>
           <h3 className="text-2xl font-bold text-gray-800 tracking-tight">{name}</h3>
@@ -24,7 +23,6 @@ const GoalCard = ({ goal, deleteGoal }) => {
         </button>
       </div>
 
-      {/* Goal details */}
       <div className="mt-4 grid grid-cols-2 gap-2 text-gray-700">
         <p className="text-base">
           <span className="text-green-600 mr-1">🎯</span> Target: <span className="font-semibold">${targetAmount.toLocaleString()}</span>
@@ -40,7 +38,6 @@ const GoalCard = ({ goal, deleteGoal }) => {
         </p>
       </div>
 
-      {/* Progress bar */}
       <div className="mt-4">
         <div className="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
           <div
@@ -53,7 +50,6 @@ const GoalCard = ({ goal, deleteGoal }) => {
         <p className="text-sm text-gray-500 mt-1 text-right">{progress.toFixed(1)}% Complete</p>
       </div>
 
-      {/* Warning and overdue messages */}
       {warning && (
         <p className="mt-3 text-yellow-600 font-semibold bg-yellow-50 px-3 py-1.5 rounded-lg flex items-center">
           <span className="mr-2">⚠️</span> Deadline approaching!

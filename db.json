@@ -1,3 +1,13 @@
 {
-  "goals": []
+  "goals": [
+    {
+      "id": "7ccd",
+      "name": "Luxury",
+      "targetAmount": "456700",
+      "category": "Car",
+      "deadline": "2025-07-19",
+      "savedAmount": 20000,
+      "createdAt": "2025-07-28"
+    }
+  ]
 }

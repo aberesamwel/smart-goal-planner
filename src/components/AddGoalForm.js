@@ -21,7 +21,7 @@ const AddGoalForm = ({ addGoal }) => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow-lg mb-6 border border-gray-100 transform hover:scale-[1.01] transition-all duration-300">
+    <div className="bg-white/20 backdrop-blur-md border border-white/30 p-8 rounded-2xl shadow-xl transition-transform hover:scale-[1.015] mb-6">
       <h2 className="text-2xl font-bold text-gray-800 tracking-tight mb-6">Add New Goal</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -30,7 +30,7 @@ const AddGoalForm = ({ addGoal }) => {
             value={form.name}
             onChange={handleChange}
             placeholder="Goal Name"
-            className="w-full border border-gray-200 rounded-lg p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+            className="w-full bg-transparent border-b-2 border-gray-300 focus:border-blue-500 outline-none py-3 px-1 text-gray-800 placeholder-gray-400 transition-all duration-300"
             required
           />
         </div>
@@ -41,7 +41,7 @@ const AddGoalForm = ({ addGoal }) => {
             value={form.targetAmount}
             onChange={handleChange}
             placeholder="Target Amount"
-            className="w-full border border-gray-200 rounded-lg p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+            className="w-full bg-transparent border-b-2 border-gray-300 focus:border-blue-500 outline-none py-3 px-1 text-gray-800 placeholder-gray-400 transition-all duration-300"
             required
           />
         </div>
@@ -51,7 +51,7 @@ const AddGoalForm = ({ addGoal }) => {
             value={form.category}
             onChange={handleChange}
             placeholder="Category"
-            className="w-full border border-gray-200 rounded-lg p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+            className="w-full bg-transparent border-b-2 border-gray-300 focus:border-blue-500 outline-none py-3 px-1 text-gray-800 placeholder-gray-400 transition-all duration-300"
             required
           />
         </div>
@@ -61,13 +61,13 @@ const AddGoalForm = ({ addGoal }) => {
             type="date"
             value={form.deadline}
             onChange={handleChange}
-            className="w-full border border-gray-200 rounded-lg p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200"
+            className="w-full bg-transparent border-b-2 border-gray-300 focus:border-blue-500 outline-none py-3 px-1 text-gray-800 placeholder-gray-400 transition-all duration-300"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2.5 rounded-lg transition-all duration-200"
+          className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition-all duration-300"
         >
           Add Goal
         </button>

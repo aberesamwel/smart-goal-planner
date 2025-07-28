@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
-npm ci || npm install
+
+echo "📦 Installing dependencies using npm..."
+npm install
+
+echo "⚙️ Building the React app..."
 npm run build
